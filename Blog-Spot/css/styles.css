@@ -1,0 +1,203 @@
+/* ==============================
+   RESET BÁSICO
+============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f1f1f1;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ==============================
+   HEADER Y REDES SOCIALES
+============================== */
+header {
+  width: 100%;
+  background-color: #0077b6;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-icons-container {
+  background-color: #005f8a;
+  padding: 0.5rem 5%;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.icons a {
+  color: #90e0ef;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.icons a:hover {
+  color: #ffd60a;
+}
+
+/* ==============================
+   NAVBAR
+============================== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+}
+
+.nav-logo-container img {
+  width: 160px;
+  height: auto;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.2));
+}
+
+.profile-link a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: #005f8a;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.profile-link a:hover {
+  background-color: #ffd60a;
+  color: #005f8a;
+}
+
+/* ==============================
+   SECCIÓN PRINCIPAL (NOTICIAS)
+============================== */
+.blogs-main {
+  padding: 2rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blogs-news-container h3 {
+  color: #0077b6;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.blogs-main-new {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  align-items: center;
+}
+
+.blogs-news-img-container img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.blogs-news-info-container h2 {
+  color: #003049;
+  margin-bottom: 0.5rem;
+}
+
+.blogs-news-info-container p {
+  margin-bottom: 1rem;
+}
+
+.blogs-button {
+  display: inline-block;
+  background-color: #0077b6;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.blogs-button:hover {
+  background-color: #ffd60a;
+  color: #003049;
+  transform: translateY(-2px);
+}
+
+/* ==============================
+   POSTS RECIENTES
+============================== */
+.blogs-posts-container {
+  margin-top: 3rem;
+}
+
+.blogs-posts-container h3 {
+  color: #0077b6;
+  margin-bottom: 1.5rem;
+}
+
+.post-container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.post-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.post-container img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.post-container p:first-of-type {
+  color: #003049;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* ==============================
+   FOOTER
+============================== */
+footer {
+  text-align: center;
+  background-color: #0077b6;
+  color: #fff;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .blogs-main-new {
+    grid-template-columns: 1fr;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+}
