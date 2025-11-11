@@ -1,6 +1,4 @@
-/* ==============================
-   RESET BÁSICO
-============================== */
+
 * {
   margin: 0;
   padding: 0;
@@ -14,9 +12,7 @@ body {
   line-height: 1.6;
 }
 
-/* ==============================
-   HEADER Y REDES SOCIALES
-============================== */
+
 header {
   width: 100%;
   background-color: #0077b6;
@@ -45,9 +41,7 @@ header {
   color: #ffd60a;
 }
 
-/* ==============================
-   NAVBAR
-============================== */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -130,9 +124,7 @@ nav {
   transform: translateY(-2px);
 }
 
-/* ==============================
-   POSTS RECIENTES
-============================== */
+
 .blogs-posts-container {
   margin-top: 3rem;
 }
@@ -168,9 +160,7 @@ nav {
   margin-bottom: 0.5rem;
 }
 
-/* ==============================
-   FOOTER
-============================== */
+
 footer {
   text-align: center;
   background-color: #0077b6;
@@ -184,9 +174,7 @@ footer p {
   margin: 0;
 }
 
-/* ==============================
-   RESPONSIVE
-============================== */
+
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
